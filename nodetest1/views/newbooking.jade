@@ -1,0 +1,76 @@
+extends layout
+block content
+	h1=title
+	form#formAddBooking(name="addbooking", method="post",action="/bookings/addbooking")
+		div.top
+			input#inputBookingName(type="text",placeholder="Booking name", name="bookingName")
+			input#inputBusName(type="text",placeholder="Bus name", name="busName")
+			input#inputRouteId(type="text",placeholder="Route Id", name="routeId")
+			input#inputTravelDate(type="date",placeholder="Travel date", name="travelDate")
+		div.container
+			div.content.
+				<ol class="cabin fuselage">
+				    <li class="row row--1">
+				      <ol class="seats" type="A">
+				        <li class="seat">
+				          <input type="checkbox" id="1A" />
+				          <label for="1A">1A</label>
+				        </li>
+				        <li class="seat">
+				          <input type="checkbox" id="1B" />
+				          <label for="1B">1B</label>
+				        </li>
+				        <li class="seat">
+				          <input type="checkbox" id="1C" />
+				          <label for="1C">1C</label>
+				        </li>
+				        <li class="seat">
+				          <input type="checkbox" disabled id="1D" />
+				          <label for="1D">Occupied</label>
+				        </li>
+				        <li class="seat">
+				          <input type="checkbox" id="1E" />
+				          <label for="1E">1E</label>
+				        </li>
+				        <li class="seat">
+				          <input type="checkbox" id="1F" />
+				          <label for="1F">1F</label>
+				        </li>
+				      </ol>
+				    </li>
+				 </ol>
+
+
+
+
+
+				table.table.table-striped
+					thead
+						tr
+							th Left
+							th Right
+					tbody
+						tr
+							td 
+								input#inputSeat1(type="checkbox", name="seat1")
+								| <label>Seat 1</label>
+							td 
+								input#inputSeat2(type="checkbox", name="seat2")
+						tr
+							td 
+								input#inputSeat3(type="checkbox", name="seat3")
+							td 
+								input#inputSeat4(type="checkbox", name="seat4")
+						tr
+							td 
+								input#inputSeat5(type="checkbox", name="seat5")
+							td 
+								input#inputSeat6(type="checkbox", name="seat6")
+						tr
+							td 
+								input#inputSeat7(type="checkbox", name="seat7")
+							td 
+								input#inputSeat8(type="checkbox", name="seat8")
+		div.footer
+			input#btnSubmit(type="submit", text="submit")
+

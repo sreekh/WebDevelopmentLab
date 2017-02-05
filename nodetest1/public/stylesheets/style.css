@@ -1,0 +1,33 @@
+.messagePanel { border: solid 1px black; width: 170px; height: 300px; padding: 10px; margin: 10px;}
+
+.seat {
+    
+    width: 30px;
+    height: 38px;
+    margin: 5px;
+    border: solid 1px black;
+    float: left; 
+}
+.seat-number{
+    text-align: -webkit-center;
+    padding-top:8px;
+}
+.booked .seat-number{
+    cursor:not-allowed;
+}
+.clearfix { clear: both;}
+.available {
+    background-color: #96c131;
+}
+.booked {
+    background-color: #98a983;
+    cursor:not-allowed;
+}
+
+.hovering{
+  background-color: #39b67c;
+}
+.selected{
+    background-color: #11a773;
+}
+
